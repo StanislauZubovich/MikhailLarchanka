@@ -1,0 +1,210 @@
+<!doctype html> 
+<html id="html"> 
+<head> 
+    <title>Заметки</title> 
+    <meta property="og:title" content="Заметки">
+    <meta property="og:url" content="http://blog.mobila.name/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/header-bg.jpg">
+    <meta property="og:site_name" content="Заметки Михаила Ларченко">
+    <meta property="og:description" content="">
+    <meta property="fb:admins" content="1405484822" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:image:src" content="/images/header-bg.jpg">
+    <meta name="twitter:title" content="Заметки">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="/images/header-bg.jpg">
+    <meta name="twitter:site" content="@MobilaName">
+    <meta name="twitter:creator" content="@ashorror">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:domain" content="mobila.name">
+    
+    <meta charset="utf-8"> 
+    <meta name="description" content="" /> 
+    <meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,initial-scale=1,user-scalable=no,maximum-scale=1.0,minimal-ui"/> 
+    <meta property="vk:app_id" content="3359999" /> 
+    
+    <link href="/css/styles.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	
+	<input id="selector" type="text" name="selector">
+	<button id="makeDom">Make Dom's structure</button>
+	
+	<fieldset>
+		<legend>Structure</legend>
+		<div id="structure"></div>
+	</fieldset>
+	
+	<hr />
+    <input type="checkbox" id="hiddenMenuChecker" class="hidden-menu-checker" />
+    <ul class="hidden-menu">
+            <li>
+                <a href="/">Главная</a>
+            </li>
+            <li>
+                <a href="/tag/javascript/">&rsaquo; JavaScript</a>
+            </li>
+            <li>
+                <a href="/tag/фото/">&rsaquo; Фотографии</a>
+            </li>
+            <li>
+                <a href="/tag/путешествия/">&rsaquo; Путешествия</a>
+            </li>
+            <li>
+                <a href="/tag/интересное/">&rsaquo; Интересное</a>
+            </li>
+            <li>
+                <a href="/tag/кино/">&rsaquo; Кино</a>
+            </li>
+            <li>
+                <a href="/stat/">Куда ходят</a>
+            </li>
+            <li>
+                <a href="//travel.mobila.name/">Карта путешествий</a>
+            </li>
+            <li>
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'bg': '#333333', 'publicname': '\u041f\u043e\u0438\u0441\u043a \u043f\u043e Mobila.name', 'target': '', 'language': 'ru', 'suggest': true, 'tld': 'ru', 'site_suggest': true, 'action': 'http://blog.mobila.name/search', 'webopt': false, 'fontsize': 16, 'arrow': false, 'fg': '#000000', 'searchid': '2084372', 'logo': 'rb', 'websearch': false, 'type': 2}"><form action="http://yandex.ru/sitesearch" method="get" target="_blank"><input type="hidden" name="searchid" value="2084372" /><input type="hidden" name="l10n" value="ru" /><input type="hidden" name="reqenc" value="" /><input type="text" name="text" value="" /><input type="submit" value="Найти" /></form></div>
+        </li>
+    </ul>
+    
+    <div class="blackheader">
+        <a href="/?utm_source=ava"><img src="/images/avatar.png" width="40" height="40" border="0" /></a>
+    </div>
+
+    <div class="wrapper" id="wrapper">
+        <label for="hiddenMenuChecker" class="btn-menu">
+            <span class="menu-global menu-top"></span>
+            <span class="menu-global menu-middle"></span>
+            <span class="menu-global menu-bottom"></span>
+        </label>
+        <div class="header no-image" > 
+            <h1>
+                Заметки            </h1>
+        </div><section>
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	 
+<!-- blog mobile -->
+<ins id="gad" class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-7970605255751241"
+     data-ad-slot="7329885608"></ins>
+<script>
+	if(window.outerWidth < 728) {
+		document.getElementById('gad').setAttribute('data-ad-slot', '7329885608');
+		document.getElementById('gad').setAttribute('style', 'display:inline-block;width:320px;height:50px');
+	} else {
+		document.getElementById('gad').setAttribute('data-ad-slot', '3114632405');
+		document.getElementById('gad').setAttribute('style', 'display:inline-block;width:728px;height:90px');
+	}
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!--a href="http://www.onetwotrip.com/ru/?lid=356e7AlbV" target="_blank">Самые дешёвые авиабилеты, бонусы, скидки!</a--></center>
+<hr />
+<div itemscope class="one_post"><h1 class="bigtitle"><a href="/post/543d36751153e/">Создаем Twitter Cards для сайта</a></h1><div class="text_description columns"><p>Уже с давних пор, при добавлении ссылки на пост в моем блоге в сообщение твиттера, в приложении сервиса или у них на сайте можно увидеть вот такую карточку статьи:</p>
+
+<p><img src="/images/87.gif" data-src="https://www.dropbox.com/s/9ide91qoyc5vq0v/twitter-cards.png?dl=1" alt="" /></p>
+
+<p>Называется это <code class="prettyprint">Twitter Card</code> и делается это очень легко с помощью нескольких мета-тегов на странице:</p>
+
+<pre><code class="prettyprint" class="html">&lt;meta name="twitter:site" content="@mobilaname"&gt;
+&lt;meta name="twitter:creator" content="@ashorror"&gt;
+&lt;meta name="twitter:card" content="summary"&gt;
+&lt;meta name="twitter:url" content="http://blog.mobila.name/post/543cf10b11d0c/"&gt;
+&lt;meta name="twitter:title" content="Украина, Херсонская область"&gt;
+&lt;meta name="twitter:description" content="Вчера утром поездом выехал в Украину. Первый пункт назначения - Новая Каховка.Поезд примчал меня в Мелитополь. Сюда едут те, кто потом едет на отдых на Азовское море. Население Мелитополя - 150 тысяч человек."&gt;
+&lt;meta name="twitter:image" content="http://ic.pics.livejournal.com/larchanka/20861394/31955/original.jpg"&gt;
+</code></pre>
+
+<p>Давайте разберем их все.</p>
+
+<ul>
+<li><code class="prettyprint">twitter:site</code> - аккаунт сайта в твиттере, включая '@'</li>
+<li><code class="prettyprint">twitter:creator</code> - аккаунт автора в твиттере, включая '@'</li>
+<li><code class="prettyprint">twitter:card</code> - Тип карточки: summary, photo или video.</li>
+<li><code class="prettyprint">twitter:url</code> - Адрес страницы в интернете.</li>
+<li><code class="prettyprint">twitter:title</code> - Заголовок статьи.</li>
+<li><code class="prettyprint">twitter:description</code> -  Описание статьи до 200 символов.</li>
+<li><code class="prettyprint">twitter:image</code> - Изображение для карточки.</li>
+</ul>
+
+<p>Когда все эти теги уже вставлены на страницы вашего сайта, самое время подать заявку для вашего домена. Подтверждение заявки – символический процесс и проходит почти сразу. Сделать этом можно на <a href="https://dev.twitter.com/form/participate-twitter-cards"><strong>специальной странице</strong></a>.</p>
+</div><div class="info">Читать 1 мин  | 14.10.2014 17:42</div></div><p>&nbsp;</p><div itemscope class="one_post"><h1 class="bigtitle"><a href="/post/543306302034c/">Настоящий размер изображения в JavaScript</a></h1><div class="text_description columns"><p>Иногда в JavaScript необходимо получить размер изображения. И все бы неплохо, но в связи со всякими Retina-дисплеями и другими экранами с высокой плотностью пикселей, изображения на страницу ставят большого размера, а потом их уменьшают. В итоге простыми методами получить размер становится тяжеловато.</p>
+
+<p>Вот способ узнать необходимые параметры с помошью неизменяемых свойств <code class="prettyprint">naturalWidth</code> и <code class="prettyprint">naturalHeight</code>.</p>
+
+<pre><code class="prettyprint" class="javascript">var src="http://path.to/image.jpg",
+    img = new Image();
+
+img.src = src;
+
+img.onload = function() {
+    console.log('Ширина изображения: %s пикселей', this.naturalWidth);
+    console.log('Высота изображения: %s пикселей', this.naturalHeight);
+}
+</code></pre>
+</div><div class="info">Читать 24 сек | 07.10.2014 00:13</div></div><p>&nbsp;</p><div itemscope class="one_post"><h1 class="bigtitle"><a href="/post/54283036656cc/">Где воровали свои идеи дизайнера советского автопрома</a></h1><div class="text_description columns"><p>Мысли о том, что в СССР умели делать красивые машины пропадают вместе с пониманием, кто и когда придумал этот дизайн на самом деле.</p>
+
+<p><img src="/images/87.gif" data-src="https://pp.vk.me/c625531/v625531014/452b/b5vMiDqyfQc.jpg" alt="" /></p>
+<p><a href="/post/54283036656cc/">Продолжение</a></p></div><div class="info">Читать 9 сек | 29.09.2014 11:56</div></div><p>&nbsp;</p><div itemscope class="one_post"><h1 class="bigtitle"><a href="/post/5427fa83bd9dc/">День открытых дверей на БелАЗе</a></h1><div class="text_description columns"><p>Почему-то пропустил и не съездил на день открытых дверей на производственных мощностях завода БелАЗ. Очень жаль. Зато вот снимки имеются:</p>
+
+<p><img src="/images/87.gif" data-src="http://img.tyt.by/n/zamirovskiy/0d/10/18_belaz_zam_tutby_phsl.jpg" alt="" /></p>
+<p><a href="/post/5427fa83bd9dc/">Продолжение</a></p></div><div class="info">Читать 1 мин  | 28.09.2014 15:09</div></div><p>&nbsp;</p><div itemscope class="one_post"><h1 class="bigtitle"><a href="/post/5427dbbe4c580/">Linkin Park – In the End в 20 различных стилях</a></h1><div class="text_description columns"><p>Если кто-то вдруг не видел: некто <em>Энтони Винсент</em> перепел песню <strong>Linkin Park – In the End</strong> с использованием 20 различных стилей музыки. Просто великолепно.</p>
+
+<div class="embed-container"><iframe width="560" height="315" src="//www.youtube.com/embed/urzWY6sqVGw" frameborder="0"></iframe></div>
+</div><div class="info">Читать 8 сек | 28.09.2014 12:55</div></div><p>&nbsp;</p><div class="bottom_navigation"><a id="prev_key" href="/page/2/">&larr; Туда</a> </div>                        <ul class="tags_list">
+                            <li class="head">Теги:</li>
+                            <li><a href="/tag/javascript/">JavaScript</a></li>
+                            <li class=""><a href="/tag/новости/">новости</a></li>
+                            <li><a href="/tag/кино/">кино</a></li>
+                            <li><a href="/tag/рецензии">рецензии</a></li>
+                            <li class=""><a href="/tag/фото/">фото</a></li>
+                            <li><a href="/tag/Беларусь/">Беларусь</a></li>
+                            <li><a href="/tag/мысли/">мысли</a></li><li><a href="/tag/мнение/">мнение</a></li>
+                            <li><a href="/tag/анимация/">анимация</a></li>
+                            <li class=""><a href="/tag/рецензии/">рецензии</a></li>
+                            <li><a href="/tag/пиво/">пиво</a></li>
+                            <li class=""><a href="/tag/Киев/">Киев</a></li>
+                            <li><a href="/tag/Украина/">Украина</a></li>
+                            <li><a href="/tag/опрос/">опрос</a></li>
+                            <li><a href="/tag/история/">история</a></li>
+                            <li class=""><a href="/tag/путешествия/">путешествия</a></li>
+                            <li><a href="/tag/нищета/">нищета</a></li>
+                            <li><a href="/tag/Минск/">Минск</a></li>
+                            <li><a href="/tag/прогулка/">прогулка</a></li>
+                            <li><a href="/tag/webnotbombs/">webnotbombs</a></li>
+                            <li class=""><a href="/tag/журналистика/">журналистика</a></li>
+                            <li><a href="/tag/видео/">видео</a></li>
+                        </ul>
+                    </section>
+<footer>
+
+    <!-- <div class="bigrektop"><table width="100%" cellpadding="0" cellspacing="0" border=0><tr><td align="left"><a href="http://blog.mobila.name/post/512682845aa08/
+" target="_blank"><img src="/images/ushki/london.png" width="359" height="100" alt="Лондон, день первый" border=0></a></td><td align="right"><a href="http://blog.mobila.name/post/5172c6cbb4ab3/
+" target="_blank"><img src="/images/ushki/menu.png" width="359" height="100" alt="Выпадающее меню на HTML / CSS без использования JavaScript" border=0></a></td></tr></table></div> -->
+    <ul class="footer_links">
+        <li><a href="//blog.mobila.name/">Блог</a></li>
+        <li><a href="//travel.mobila.name/">Карта путешествий</a></li>
+        <li><a href="//blog.mobila.name/stat/">Куда ходят</a></li>
+        <li></li><li><a href="//larchanka.livejournal.com/" target="_blank">Заметки в ЖЖ</a></li>
+        <li><a href="//twitter.com/MobilaName" target="_blank">Заметки в Твиттере</a></li>
+        <li><a href="//feeds.feedburner.com/mobilaname" target="_blank">Заметки в RSS</a></li>
+    </ul>
+    <ul class="footer_links">
+        <li><a href="//twitter.com/ashorror" target="_blank">Я в Твиттере</a></li>
+        <li><a href="//instagram.com/ashorror" target="_blank">Я в Инстаграме</a></li>
+        <li><a href="//www.facebook.com/larchanka" target="_blank">Я в Фейсбуке</a></li>
+        <li><a href="//vk.com/larchanka" target="_blank">Я во Вконтакте</a></li>
+        <li><a href="//youtube.com/user/miszeczka" target="_blank">Я на Youtube</a></li>
+		<li><a href="//www.linkedin.com/in/mikhaillarchanka/" target="_blank">Я в Linkedin</a></li>
+        <li><a href="//github.com/larchanka" target="_blank">Я на GitHub</a></li>
+    </ul>
+</footer>
+    
+    <script type="text/javascript" src="/js/app.min.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</div></body></html>
