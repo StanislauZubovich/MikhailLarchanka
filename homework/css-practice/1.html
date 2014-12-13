@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+    
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="styles.min.css" />
+</head>
+<style id="jsbin-css">
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'sans serif';
+  font-size: 12pt;
+}
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: #eee;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  color: #fff;
+  background-color: #666;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+header {
+  text-align: center;
+  padding: 5px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+.news-item {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid red;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    .news-item-title {
+        font-size: 20px;
+        font-weight: 700;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .news-item-image {
+        height: 100px;
+        /*background-color: orange;
+        background-image: url("./1.png");
+        background-position: center center;
+        background-repeat: no-repeat;*/
+        
+        background: orange attr(data-url) center center no-repeat;
+        background-size: cover;
+    }
+
+    .news-item-text {
+    
+    }
+
+    .news-item:after {
+        display: block;
+        content: ' ';
+        clear: both;
+        float: none;
+    }
+
+@media screen and (min-width: 729px) {
+    .btn-menu {
+        display: none;
+    }
+    
+    .hidden-menu {
+        display: block;
+        position: static;
+        width: 100%;
+    }
+    
+    .hidden-menu li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    
+    .news-item {
+        float: left;
+        width: 33.3333333%;
+        height: 198px;
+        overflow: hidden;
+    }
+    .news-item-image {
+        float: left;
+        width: 100px;
+    }
+    
+    .news-item-text {
+        margin-left: 120px;
+    }
+}
+
+</style>
+<body>
+    
+    
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    <header>
+        <h1>Title</h1>
+    </header>
+    <ul class="hidden-menu">
+      <li><a href="">Главная</a></li><!--  
+      --><li><a href="">О нас</a></li><!--
+      --><li><a href="">Видео</a></li><!--  
+      --><li><a href="">Галерея</a></li>
+    </ul>
+    
+    <div class="news-item">
+        <h2 class="news-item-title">News title</h2>
+        <div class="news-item-image"></div>
+        <div class="news-item-text">
+            <p>JKHdsjkh ahjsfbgsud dgashgdasukj</p>
+            <p>ajkdhsjkdhjakshdjkashdkj</p>
+        </div>
+    </div>
+    
+    <div class="news-item">
+        <h2 class="news-item-title">News title JKHdsjkh ahjsfbgsud dgashgdasukj JKHdsjkh ahjsfbgsud dgashgdasukj JKHdsjkh ahjsfbgsud dgashgdasukj</h2>
+        <div class="news-item-image"></div>
+        <div class="news-item-text">
+            <p>JKHdsjkh ahjsfbgsud dgashgdasukj</p>
+            <p>ajkdhsjkdhjakshdjkashdkj</p>
+            <p>JKHdsjkh ahjsfbgsud dgashgdasukj JKHdsjkh ahjsfbgsud dgashgdasukj JKHdsjkh ahjsfbgsud dgashgdasukj</p>
+            <p>JKHdsjkh ahjsfbgsud dgashgdasukj JKHdsjkh ahjsfbgsud dgashgdasukj JKHdsjkh ahjsfbgsud dgashgdasukj</p>
+        </div>
+    </div>
+    
+    <div class="news-item">
+        <h2 class="news-item-title">News title</h2>
+        <div class="news-item-image" data-image="url"></div>
+        <div class="news-item-text">
+            <p>JKHdsjkh ahjsfbgsud dgashgdasukj</p>
+            <p>ajkdhsjkdhjakshdjkashdkj</p>
+        </div>
+    </div>
+    
+    <div class="news-item">
+        <h2 class="news-item-title">News title</h2>
+        <div class="news-item-image"></div>
+        <div class="news-item-text">
+            <p>JKHdsjkh ahjsfbgsud dgashgdasukj</p>
+            <p>ajkdhsjkdhjakshdjkashdkj</p>
+        </div>
+    </div>
+    
+</body>
+</html>
