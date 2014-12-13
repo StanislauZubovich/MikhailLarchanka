@@ -19,7 +19,7 @@ css-practice-homework
     css
     less
         components
-            /* Файлы с вашим компонентами */
+            /* Файлы с вашими компонентами */
         reset.less
         base.less
         styles.less
@@ -29,7 +29,7 @@ css-practice-homework
 Взять **reset.less** можно [здесь](/OXTraining/MikhailLarchanka/wiki/reset.less)
 
 Если вдруг программа `Koala` сломается, то можно использовать консольную команду:
-`lessc styles.less > styles.css`, где ]styles.less] – путь к исходному less-файлу, `styles.css` путь к желаемому css-файлу.
+`lessc styles.less > styles.css`, где [styles.less] – путь к исходному less-файлу, `styles.css` путь к желаемому css-файлу.
 
 ###Возможные компоненты
 
